@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubKey"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/sub_key_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="这是主观题作业完成后的标题"
+        android:textColor="@color/colorBlack"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub_key_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="75分"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_key_title" />
+
+    <Button
+        android:id="@+id/enter_discussion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorAccentLight"
+        android:text="参与讨论"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sub_key_score"
+        app:layout_constraintStart_toEndOf="@+id/sub_key_score" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_key_score" />
+
+    <TextView
+        android:id="@+id/sub_key_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp"
+        android:text="这是主观题作业的内容，很有可能将会横跨多行，所以在此测试多行文本可用性。这是主观题作业的内容，很有可能将会横跨多行，所以在此测试多行文本可用性。"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/sub_key_ur_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="你的答案："
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_key_content"/>
+    <TextView
+        android:id="@+id/sub_key_answer_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp"
+        android:text="这是主观题作业的答案，很有可能将会横跨多行，所以在此测试多行文本可用性。这是主观题作业的内容，很有可能将会横跨多行，所以在此测试多行文本可用性。"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_key_ur_answer" />
+
+    <TextView
+        android:id="@+id/sub_key_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        android:text="批语："
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_key_answer_content"/>
+
+    <TextView
+        android:id="@+id/sub_key_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp"
+        android:text="这是主观题作业的批语，很有可能将会横跨多行，所以在此测试多行文本可用性。这是主观题作业的内容，很有可能将会横跨多行，所以在此测试多行文本可用性。"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_key_comment" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
